@@ -1,0 +1,958 @@
+[
+    {
+        "latin": "Ab imo pectore.",
+        "translation": "From the bottom of the chest (heart)."
+    },
+    {
+        "latin": "Ab initio.",
+        "translation": "From the beginning."
+    },
+    {
+        "latin": "Abyssus abyssum invocat.",
+        "translation": "Deep calls unto deep. One misstep leads to another."
+    },
+    {
+        "latin": "Acta est fabula.",
+        "translation": "Drama has been acted out. These words announced the end of a performance in a Roman theatre.  Emperor August said these words on his deathbed."
+    },
+    {
+        "latin": "Ad acta.",
+        "translation": "To archives. Not actual any more."
+    },
+    {
+        "latin": "Ad augusta per angusta.",
+        "translation": "To high places by narrow roads."
+    },
+    {
+        "latin": "Ad hoc.",
+        "translation": "Exactly for that. Also: Not prearranged, informal."
+    },
+    {
+        "latin": "Ad honorem.",
+        "translation": "In honour. Honour not bearing any material advantage."
+    },
+    {
+        "latin": "Ad infinitum.",
+        "translation": "To infinity.  Endlessly."
+    },
+    {
+        "latin": "Ad libitum.",
+        "translation": "Freely. Without restraint, as desired."
+    },
+    {
+        "latin": "Ad nauseam.",
+        "translation": "To the point of being disgusted."
+    },
+    {
+        "latin": "Alea iacta est.",
+        "translation": "The dice have been cast. The decision has been made. Supposedly words of Julius Caesar as he was going to cross river Rubicon with his army on his way toward Rome.  For an army leader it was forbidden to cross this river with an army, so that moment was a start of civil war."
+    },
+    {
+        "latin": "Alter ego.",
+        "translation": "Another I. Soul mate, close friend."
+    },
+    {
+        "latin": "Alter ipse amicus.",
+        "translation": "A friend is another self."
+    },
+    {
+        "latin": "Anguis in herba.",
+        "translation": "A snake in the grass. A treacherous person."
+    },
+    {
+        "latin": "Animus facit nobilem.",
+        "translation": "The spirit makes (human) noble."
+    },
+    {
+        "latin": "Aquila non captat muscas.",
+        "translation": "An eagle doesn't catch flies."
+    },
+    {
+        "latin": "Ars gratia artis.",
+        "translation": "Art for art's sake. Art has its own sense."
+    },
+    {
+        "latin": "Ars longa, vita brevis.",
+        "translation": "Skill (of medicine) is long, life (of a patient and doctor) is short."
+    },
+    {
+        "latin": "Asinus asinum fricat.",
+        "translation": "The donkey scratches the donkey. Stupid and conceited people flatter each other about qualities they do not possess."
+    },
+    {
+        "latin": "Audiatur et altera pars!",
+        "translation": "Let us hear the opposite side!"
+    },
+    {
+        "latin": "Aut inveniam viam aut faciam.",
+        "translation": "I will either find a way or I will make one."
+    },
+    {
+        "latin": "Ave Caesar morituri te salutant!",
+        "translation": "Hail, Caesar, those who are about to die salute you! According to Suatonius, words said by gladiators."
+    },
+    {
+        "latin": "Bene qui latuit, bene vixit.",
+        "translation": "One who has lived well has lived unnoticed."
+    },
+    {
+        "latin": "Caeci caecos ducentes.",
+        "translation": "Blind are led by the blind. Leaders are not more knowledgeable than the ones they lead."
+    },
+    {
+        "latin": "Carpe diem.",
+        "translation": "Seize the day."
+    },
+    {
+        "latin": "Casus belli.",
+        "translation": "The occasion of war. An event or action that (allegedly) justifies a war or conflict."
+    },
+    {
+        "latin": "Caveat emptor.",
+        "translation": "Let the buyer beware. Buyer must ensure that the goods about to be purchased are free from defects."
+    },
+    {
+        "latin": "Cedant arma togae.",
+        "translation": "Let arms yield to the toga. Let violence give place to law."
+    },
+    {
+        "latin": "Ceteris paribus.",
+        "translation": "Other things (being) equal. All variables other than the ones being studied are assumed to be constant."
+    },
+    {
+        "latin": "Ceterum censeo: delenda est Carthago. Ceterum censeo Carthaginem delendam esse.",
+        "translation": "And in conclusion I think: Carthage ought to be destroyed. And in conclusion I think that Carthage ought to be destroyed. Closing words of every speech by Cato the Elder in the Roman Senate, regardless of the topic of the debate, in aim to keep the renewal of war against Carthage on the agenda.  Eventually, Carthage was, in fact, destroyed by the Romans."
+    },
+    {
+        "latin": "Clara pacta, boni amici.",
+        "translation": "Clear agreements, good friends."
+    },
+    {
+        "latin": "Cogito, ergo sum.",
+        "translation": "I think, therefore I am."
+    },
+    {
+        "latin": "Commune naufragium dulce.",
+        "translation": "A common shipwreck is sweet. Common traumas feel good and connect people."
+    },
+    {
+        "latin": "Concordia res parvae crescent.",
+        "translation": "Work together to accomplish more."
+    },
+    {
+        "latin": "Conditio sine qua non.",
+        "translation": "A condition, without which, not. An essential condition or requirement."
+    },
+    {
+        "latin": "Corpus delicti.",
+        "translation": "The body of a crime. The facts of a crime."
+    },
+    {
+        "latin": "Crede quod habes, et habes.",
+        "translation": "Believe that you have it, and you have it."
+    },
+    {
+        "latin": "Crudelius est quam mori semper timere mortem.",
+        "translation": "It is crueller to be always afraid of dying than to die."
+    },
+    {
+        "latin": "Cuivis dolori remedium est patientia.",
+        "translation": "Patience is the cure for all suffering."
+    },
+    {
+        "latin": "Cum grano salis.",
+        "translation": "With a grain of salt. Take something not literally, but with due consideration."
+    },
+    {
+        "latin": "Cum laude magnum.",
+        "translation": "With great success."
+    },
+    {
+        "latin": "Curriculum vitae.",
+        "translation": "The run of life."
+    },
+    {
+        "latin": "Damnant quod non intelligunt.",
+        "translation": "They (people) condemn what they do not understand."
+    },
+    {
+        "latin": "De facto.",
+        "translation": "In fact."
+    },
+    {
+        "latin": "De iure. (De jure.)",
+        "translation": "By law. According to law."
+    },
+    {
+        "latin": "De gustibus non est disputandum.",
+        "translation": "Tastes are not to be argued."
+    },
+    {
+        "latin": "De minimis non curat lex.",
+        "translation": "The law does not concern itself with trifles."
+    },
+    {
+        "latin": "De mortuis nil nisi bene.",
+        "translation": "(Say) nothing but good about the dead."
+    },
+    {
+        "latin": "Deus ex machina.",
+        "translation": "The god from a device. Sudden, unexpected turnover. Locution from Greek dramas, in which often, at some point, gods appear to resolve an unresolvable situation in a sudden, unexpected way."
+    },
+    {
+        "latin": "Dimidium facti qui coepit habet.",
+        "translation": "He who has begun has the job half done."
+    },
+    {
+        "latin": "Divide et impera.",
+        "translation": "Part and rule. Roman maxima of ruling the subdued nations."
+    },
+    {
+        "latin": "Do ut des.",
+        "translation": "Give to obtain (something back)."
+    },
+    {
+        "latin": "Docendo discimus.",
+        "translation": "Teach in order to learn. We learn by teaching."
+    },
+    {
+        "latin": "Dulce et decorum est pro patria mori.",
+        "translation": "It is sweet and proper to die for one's country."
+    },
+    {
+        "latin": "Dulcius ex asperis.",
+        "translation": "Through difficulty, sweetness."
+    },
+    {
+        "latin": "Dum spiro, spero.",
+        "translation": "As long as I breathe, I hope."
+    },
+    {
+        "latin": "Dura lex, sed lex.",
+        "translation": "The law is hard, but it is law."
+    },
+    {
+        "latin": "Eram quod es, eris quod sum.",
+        "translation": "I was what you are, you will be what I am."
+    },
+    {
+        "latin": "Errare humanum est, in errore perservare stultum.",
+        "translation": "It is human to make a mistake, it is stupid to persist in it."
+    },
+    {
+        "latin": "Est modus in rebus.",
+        "translation": "There is a middle course in all things."
+    },
+    {
+        "latin": "Et tu, Brute!",
+        "translation": "You too, Brutus! Even you have betrayed me! The exclamation of Julius Caesar in his last moments, as he noticed his adopted son Brutus among his murderers."
+    },
+    {
+        "latin": "Eventus stultorum magister.",
+        "translation": "Events are the teacher of stupid persons. Stupid people learn by experience, bright people calculate what to do."
+    },
+    {
+        "latin": "Ex abundancia cordis, enim os loquitor.",
+        "translation": "From the abundance of the heart the mouth speaks."
+    },
+    {
+        "latin": "Ex abrupto.",
+        "translation": "Without preparation."
+    },
+    {
+        "latin": "Ex cathedra.",
+        "translation": "From the chair. With authority (without argumentation)."
+    },
+    {
+        "latin": "Ex gratia.",
+        "translation": "By moral (not legal) obligation."
+    },
+    {
+        "latin": "Ex libris.",
+        "translation": "From the library (of)."
+    },
+    {
+        "latin": "Exempli gratia. (e.g.)",
+        "translation": "For the sake of example."
+    },
+    {
+        "latin": "Faber quisque fortunae suae.",
+        "translation": "Each man (is) the maker of his own fortune."
+    },
+    {
+        "latin": "Facta, non verba!",
+        "translation": "Deeds, not words!"
+    },
+    {
+        "latin": "Falsus in uno, falsus in omnibus.",
+        "translation": "False in one thing, false in all."
+    },
+    {
+        "latin": "Fama volat.",
+        "translation": "Rumor flies (travels fast)."
+    },
+    {
+        "latin": "Fames est optimus coquus.",
+        "translation": "Hunger is the best cook."
+    },
+    {
+        "latin": "Felix qui potuit rerum cognescere causas.",
+        "translation": "Happy is the one who can learn the causes/reasons of things."
+    },
+    {
+        "latin": "Festina lente!",
+        "translation": "Rush slowly! Do not hasten!"
+    },
+    {
+        "latin": "Fiat justitia, ruat caelum.",
+        "translation": "Let justice be done, even though the heavens collapse."
+    },
+    {
+        "latin": "Fluctuat nec mergitur.",
+        "translation": "It rocks but does not sink. It is tossed by the waves but it does not sink."
+    },
+    {
+        "latin": "Forsan et haec olim meminisse iuvabit.",
+        "translation": "Perhaps one day it shall be good to remember even these (tragic) things."
+    },
+    {
+        "latin": "Fortes Fortuna adjuvat.",
+        "translation": "Fortune aids the brave."
+    },
+    {
+        "latin": "Fortitudine vincimus.",
+        "translation": "By endurance we conquer."
+    },
+    {
+        "latin": "Fortiter in re, suaviter in modo.",
+        "translation": "Resolutely in deed, gentle in manner."
+    },
+    {
+        "latin": "Fortuna amicos parat, inopia amicos probat.",
+        "translation": "Fortune is preparing friends, scarcity is in testing them."
+    },
+    {
+        "latin": "Gloriosum est iniurias oblivisci.",
+        "translation": "It is glorious to forget injustice."
+    },
+    {
+        "latin": "Gutta cavat lapidem (non vi, sed saepe cadendo).",
+        "translation": "The water drop drills stone (not by the force, but by falling often). Endurance can overcome an obstacle even without force."
+    },
+    {
+        "latin": "Hannibal ante portas!",
+        "translation": "Hannibal is at the door! The enemy/danger is at the door! Exclamation of frightened citizens of Rome as enemy army under Hannibal approached the city of Rome."
+    },
+    {
+        "latin": "Hic Rhodus, hic salta!",
+        "translation": "Here's Rhodus, here jump! Show your skills now! In Aesop's fable, the answer to the boaster who was boasting about a long jump he made on Rhodes."
+    },
+    {
+        "latin": "Historia est vitae magistra.",
+        "translation": "History is the tutor of life."
+    },
+    {
+        "latin": "Hoc natura est insitum, ut quem timueris, hunc semper oderis.",
+        "translation": "It's an innate thing to always hate the one we've learnt to fear."
+    },
+    {
+        "latin": "Homines, dum docent, discunt.",
+        "translation": "While men teach they learn."
+    },
+    {
+        "latin": "Homo homini lupus.",
+        "translation": "Man is a wolf to man."
+    },
+    {
+        "latin": "Homo sum, humani nihil a me alienum puto.",
+        "translation": "I am human, therefore nothing human is strange to me."
+    },
+    {
+        "latin": "Idem dito. (i.d.)",
+        "translation": "Exactly the same."
+    },
+    {
+        "latin": "Idem velle atque idem nolle, ea demum firma amicitia est.",
+        "translation": "Desiring the same things and disliking the same things, that is what true friendship is."
+    },
+    {
+        "latin": "Id est. (i.e.)",
+        "translation": "That is (to say)."
+    },
+    {
+        "latin": "Ignorantia juris non excusat.",
+        "translation": "Ignorance of the law is no excuse. A legal principle whereby ignorance of a law does not allow one to escape liability."
+    },
+    {
+        "latin": "Imperare sibi maximum imperium est.",
+        "translation": "To rule yourself is the ultimate power."
+    },
+    {
+        "latin": "In cauda venenum.",
+        "translation": "In the tail (of the scorpion) is the poison. Look beyond the obvious in considering possible danger."
+    },
+    {
+        "latin": "In dubio pro reo.",
+        "translation": "In (time of) doubt, in favor of the accused. If there is a doubt about guilt, the judgement has to be in favour of the accused."
+    },
+    {
+        "latin": "In flagrante delicto.",
+        "translation": "While the crime is blazing. Caught in the act."
+    },
+    {
+        "latin": "In ictu oculi.",
+        "translation": "In the blink of an eye."
+    },
+    {
+        "latin": "In medias res.",
+        "translation": "In the midst of things."
+    },
+    {
+        "latin": "In medio stat virtus.",
+        "translation": "Virtue stands in the middle. Virtue is in the moderate, not the extreme position."
+    },
+    {
+        "latin": "In memoriam.",
+        "translation": "In memory (of)."
+    },
+    {
+        "latin": "In vino veritas.",
+        "translation": "The truth is in wine. A drunk person tells the truth."
+    },
+    {
+        "latin": "Inter arma silent leges.",
+        "translation": "In time of war, laws are silent."
+    },
+    {
+        "latin": "Inter arma silent Musae.",
+        "translation": "In time of war, muses (arts) are silent."
+    },
+    {
+        "latin": "Inter caecos regnat strabo.",
+        "translation": "Among blind people the squinting one rules."
+    },
+    {
+        "latin": "Ius primae noctis.",
+        "translation": "The right of first night. Belongs to the feudal period when the knights supposedly had the right to be the first to have sexual intercourse with the peasants' newly married (virgin) wives."
+    },
+    {
+        "latin": "Lapsus calami.",
+        "translation": "Error of the pen."
+    },
+    {
+        "latin": "Lapsus linguae.",
+        "translation": "Error of the tongue."
+    },
+    {
+        "latin": "Lapsus memoriae.",
+        "translation": "Error of the memory."
+    },
+    {
+        "latin": "Lectori salutant. (L.S.)",
+        "translation": "Salute to the reader."
+    },
+    {
+        "latin": "Leges sine moribus vanae.",
+        "translation": "Laws without morals are useless (in vain)."
+    },
+    {
+        "latin": "Lupus in fabula.",
+        "translation": "Wolf in the story. Speaking of the devil."
+    },
+    {
+        "latin": "Malum quidem nullum esse sine aliquo bono.",
+        "translation": "There is, to be sure, no evil without something good."
+    },
+    {
+        "latin": "Manus manum lavat.",
+        "translation": "One hand washes the other. A favor for a favor."
+    },
+    {
+        "latin": "Margaritas ante porcos.",
+        "translation": "Pearls before swine. To give something valuable to someone not respecting it."
+    },
+    {
+        "latin": "Mea culpa.",
+        "translation": "By my guilt."
+    },
+    {
+        "latin": "Medicus curat, natura sanat.",
+        "translation": "The physician heals, nature convalesces."
+    },
+    {
+        "latin": "Mens sana in corpore sano.",
+        "translation": "A sound mind in a sound body. Both physical and mental health are necessary."
+    },
+    {
+        "latin": "Mundus vult decipi, ergo decipiatur.",
+        "translation": "The world wants to be deceived, so let it be deceived!"
+    },
+    {
+        "latin": "Natura in minima maxima.",
+        "translation": "Nature is the greatest in the smallest things."
+    },
+    {
+        "latin": "Navigare necesse est.",
+        "translation": "To sail is necessary."
+    },
+    {
+        "latin": "Ne Jupiter quidem omnibus placet.",
+        "translation": "Not even Jupiter (supreme God) can please everyone."
+    },
+    {
+        "latin": "Ne supra crepidam judicaret.",
+        "translation": "Do not judge higher than the sandal. One should judge only matters that one knows something about. Apelles, Greek painter, would put his pictures where the public could see them and then stand out of sight so he could listen to their comments. A shoemaker once faulted the painter for a sandal with one loop too few, which Apelles corrected. The shoemaker, emboldened by this acceptance of his views, then criticised the subject's leg. According to Pliny Apelles replied to this that the shoemaker should not judge beyond his sandals."
+    },
+    {
+        "latin": "Nemo ante mortem beatus.",
+        "translation": "Nobody is blessed before his death. We never know what is future has in store for us."
+    },
+    {
+        "latin": "Nemo gratis mendax.",
+        "translation": "No man lies freely. A person with no reason to lie is telling the truth."
+    },
+    {
+        "latin": "Nemo iudex in sua causa.",
+        "translation": "No one is a judge in his own case. No matter how objective one may be in judging others, one can never keep the same objectivity towards oneself."
+    },
+    {
+        "latin": "Nemo me impune lacessit.",
+        "translation": "No one strikes me with impunity."
+    },
+    {
+        "latin": "Nemo propheta in patria sua.",
+        "translation": "No one is considered a prophet in his hometown/homeland."
+    },
+    {
+        "latin": "Nemo saltat sobrius.",
+        "translation": "No man dances sober."
+    },
+    {
+        "latin": "Nemo sine vitio est.",
+        "translation": "No one is without fault."
+    },
+    {
+        "latin": "Nill Illigitimi carborundum.",
+        "translation": "Do not let the bastards grind (wear) you down."
+    },
+    {
+        "latin": "Nil novi sub sole.",
+        "translation": "Nothing new under the sun."
+    },
+    {
+        "latin": "Nil satis nisi optimum.",
+        "translation": "Nothing but the best is good enough."
+    },
+    {
+        "latin": "Nocebo.",
+        "translation": "I will harm. Medical expression for remedies with no medical effect, which worsen one's medical condition only because one believes they do."
+    },
+    {
+        "latin": "Nolens volens.",
+        "translation": "Whether willing or not."
+    },
+    {
+        "latin": "Noli turbare circulos meos!",
+        "translation": "Do not upset my circles! Supposedly said by Archimedes in deep thoughts over geometrical shapes drawn in the sand at the moment a soldier of the conquering Roman army broke into his house and slew him."
+    },
+    {
+        "latin": "Nomen est omen.",
+        "translation": "The name is the sign."
+    },
+    {
+        "latin": "Non bis in idem.",
+        "translation": "Not twice for the same thing. No man can be tried a second time on the same charge."
+    },
+    {
+        "latin": "Non omne quod nitet aurum est.",
+        "translation": "Not everything that shines is gold. Not everything that looks beautiful is good."
+    },
+    {
+        "latin": "Non plus ultra! (Nec plus ultra!)",
+        "translation": "Nothing above that!"
+    },
+    {
+        "latin": "Non scholae sed vitae discimus.",
+        "translation": "We learn not for school but for life."
+    },
+    {
+        "latin": "Non sequitur.",
+        "translation": "It does not follow. Incorrect statement."
+    },
+    {
+        "latin": "Non uno die Roma aedificata est.",
+        "translation": "Rome was not built in one day (either)."
+    },
+    {
+        "latin": "Nosce te ipsum!",
+        "translation": "Know thyself."
+    },
+    {
+        "latin": "Nota bene.",
+        "translation": "Observe carefully."
+    },
+    {
+        "latin": "Nulla avarita sine poena est.",
+        "translation": "There is no avarice without penalty."
+    },
+    {
+        "latin": "Nulla dies sine linea.",
+        "translation": "Not a day without a line. Do something every day!"
+    },
+    {
+        "latin": "Nullius in verba.",
+        "translation": "Nothing in words. Nothing by mere (words of) authority. See for yourself."
+    },
+    {
+        "latin": "Nullum crimen sine lege, nulla poena sine lege.",
+        "translation": "No crime and no punishment without a (pre-existing) law."
+    },
+    {
+        "latin": "Nullum magnum ingenium sine mixtura dementiae fuit.",
+        "translation": "There is no great spirit (genius) without a shred of insanity."
+    },
+    {
+        "latin": "Occasio aegre offertur, facile amittitur.",
+        "translation": "Opportunity is offered with difficulty, lost with ease."
+    },
+    {
+        "latin": "Occasio facit furem.",
+        "translation": "Opportunity makes a thief."
+    },
+    {
+        "latin": "Omnia mea mecum porto.",
+        "translation": "All that is mine, I carry with me. My wisdom is my greatest wealth."
+    },
+    {
+        "latin": "Omnia munda mundis.",
+        "translation": "Everything is pure to pure ones."
+    },
+    {
+        "latin": "Omnia praeclara rara.",
+        "translation": "All the best things are rare."
+    },
+    {
+        "latin": "Omnia vincit amor.",
+        "translation": "Love conquers all."
+    },
+    {
+        "latin": "Pacta sunt servanda.",
+        "translation": "Agreements should be obeyed."
+    },
+    {
+        "latin": "Panem et circenses.",
+        "translation": "Bread and circuses. Food and games to keep people happy."
+    },
+    {
+        "latin": "Parva scintilla saepe magnam flamam excitat.",
+        "translation": "A small spark often initiates a large flame."
+    },
+    {
+        "latin": "Pecunia non olet.",
+        "translation": "Money has no smell. Money doesn't stink. With the aim of replenishing depleted state funds, Vespasianus introduced, among other things, a new tax on public lavatories.  When objected to by his son Titus, Vespasianus held a coin collected under that tax law to his son's nose and asked him if it smelled."
+    },
+    {
+        "latin": "Pede poena claudo.",
+        "translation": "Punishment comes limping. Retribution comes slowly, but surely."
+    },
+    {
+        "latin": "Per aspera ad astra. (Per ardua ad astra.)",
+        "translation": "Through thorns to the stars.  (Through struggle to the success.)"
+    },
+    {
+        "latin": "Per se.",
+        "translation": "By/of itself."
+    },
+    {
+        "latin": "Persona non grata.",
+        "translation": "An unwelcome person."
+    },
+    {
+        "latin": "Philosophum non facit barba.",
+        "translation": "A beard doesn't make a philosopher."
+    },
+    {
+        "latin": "Placebo.",
+        "translation": "I will please. Medical expression for remedies with no medical effect, which improve one's medical condition only because one believes they do."
+    },
+    {
+        "latin": "Post tenebras lux.",
+        "translation": "After darkness, light."
+    },
+    {
+        "latin": "Post scriptum. (P.S.)",
+        "translation": "After text.  (Footnote at the end of a letter.)"
+    },
+    {
+        "latin": "Potius sero quam nunquam. Titus Livius",
+        "translation": "Better late than never."
+    },
+    {
+        "latin": "Primum non nocere.",
+        "translation": "First, do no harm."
+    },
+    {
+        "latin": "Primus inter pares.",
+        "translation": "First among equals."
+    },
+    {
+        "latin": "Quae nocent, saepe docent.",
+        "translation": "What hurts, often instructs. One learns by bitter/adverse experience."
+    },
+    {
+        "latin": "Quam bene vivas refert, non quam diu.",
+        "translation": "How well you live makes a difference, not how long."
+    },
+    {
+        "latin": "Qui me amat, amet et canem meum.",
+        "translation": "Who loves me, loves my dog too."
+    },
+    {
+        "latin": "Qui multum habet, plus cupit.",
+        "translation": "He who has much desires more."
+    },
+    {
+        "latin": "Qui pro innocente dicit, satis est eloquens.",
+        "translation": "He who speaks for the innocent is eloquent enough."
+    },
+    {
+        "latin": "Quid pro quo.",
+        "translation": "Something for something. A reciprocal exchange, something given in compensation, esp. an advantage."
+    },
+    {
+        "latin": "Quidquid agis, prudenter agas et respice finem!",
+        "translation": "Whatever you do, do cautiously, and look to the end."
+    },
+    {
+        "latin": "Quis custodiet ipsos custodes?",
+        "translation": "Who watches the watchmen?"
+    },
+    {
+        "latin": "Quo vadis (Domine)?",
+        "translation": "Where are you going (Lord)? Supposedly said by Apostle Peter to Jesus Christ, whom he encountered when fleeing Rome."
+    },
+    {
+        "latin": "Quod differtur, non aufertur.",
+        "translation": "That which is postponed is not dropped. The inevitable is yet to happen. Said by Sir Thomas More, when a false accusation against him made by a new chancellor was at first dropped.   Later he was executed."
+    },
+    {
+        "latin": "Quod erat demonstrandum. (QED)",
+        "translation": "What was to be demonstrated. Text in the end of demonstration."
+    },
+    {
+        "latin": "Quod licet Iovi non licet bovi.",
+        "translation": "What Jupiter (supreme God) is allowed to do, cattle (people) are not."
+    },
+    {
+        "latin": "Quod me nutrit me destruit.",
+        "translation": "What nourishes me, destroys me"
+    },
+    {
+        "latin": "Quod natura non sunt turpia.",
+        "translation": "What is natural cannot be bad."
+    },
+    {
+        "latin": "Quod non est in actis, non est in mundo.",
+        "translation": "What is not kept in records does not exist. From the Roman Law."
+    },
+    {
+        "latin": "Quos Deus vult perdere, prius dementat.",
+        "translation": "Those whom God wills to destroy he first deprives of their senses."
+    },
+    {
+        "latin": "Quot homines, tot sententiae.",
+        "translation": "As many men as many opinions."
+    },
+    {
+        "latin": "Repetitio est mater studiorum.",
+        "translation": "Repeating is the mother of learning."
+    },
+    {
+        "latin": "Requiescat in pace. (R.I.P.)",
+        "translation": "Rest in Peace."
+    },
+    {
+        "latin": "Scientia non habet inimicum nisi ignorantem.",
+        "translation": "Science has no enemies but the ignorant."
+    },
+    {
+        "latin": "Scio me nihil scire.",
+        "translation": "I know that I know nothing. Certain knowledge cannot be obtained."
+    },
+    {
+        "latin": "Scire tuum nihil est, nisi te scire hoc sciat alter.",
+        "translation": "Your knowledge is nothing when no one else knows that you know it."
+    },
+    {
+        "latin": "Semper inops quicumque cupit.",
+        "translation": "Whoever desires is always poor."
+    },
+    {
+        "latin": "Sero venientibus ossa.",
+        "translation": "The bones for those who come late. Those who come late get the leavings."
+    },
+    {
+        "latin": "Si Deus pro nobis quis contra nos.",
+        "translation": "If God is with us who is against us."
+    },
+    {
+        "latin": "Si fractum non sit, noli id reficere.",
+        "translation": "If it isn't broken, don't fix it."
+    },
+    {
+        "latin": "Si sapis, sis apis.",
+        "translation": "If you are wise, be a bee."
+    },
+    {
+        "latin": "Si tacuisses, philosophus mansisses.",
+        "translation": "If you had kept your silence, you would have stayed a philosopher."
+    },
+    {
+        "latin": "Si vis pacem, para bellum.",
+        "translation": "If you want peace, prepare for war. Peace is least threatened, when the state is prepared for defence."
+    },
+    {
+        "latin": "Sic itur ad astra.",
+        "translation": "Thus you shall go to the stars. Thus is immortality gained."
+    },
+    {
+        "latin": "Sic transit gloria mundi.",
+        "translation": "Thus passes the glory of the world. The world's glory is transitory."
+    },
+    {
+        "latin": "Simplex sigillum veri.",
+        "translation": "Simplicity is the feature of truth."
+    },
+    {
+        "latin": "Sine die.",
+        "translation": "Without a date. Without a date limit.  Unknown period of time."
+    },
+    {
+        "latin": "Sine sole sileo.",
+        "translation": "Without the sun I'm silent."
+    },
+    {
+        "latin": "Sol omnibus lucet.",
+        "translation": "The sun shines upon all."
+    },
+    {
+        "latin": "Status quo.",
+        "translation": "The present state of affairs."
+    },
+    {
+        "latin": "Stultorum infinitus est numerus. Bible",
+        "translation": "Infinite is the number of fools."
+    },
+    {
+        "latin": "Summum ius, summa iniuria.",
+        "translation": "Highest law, greatest injustice."
+    },
+    {
+        "latin": "Tabula rasa.",
+        "translation": "A clean slate. Person that knows nothing."
+    },
+    {
+        "latin": "Tempora mutantur, et nos mutamur in illis.",
+        "translation": "Times are changing, and we are changing within them."
+    },
+    {
+        "latin": "Tempus fugit.",
+        "translation": "Time flies."
+    },
+    {
+        "latin": "Terra incognita.",
+        "translation": "An unknown land. Unexplored by mankind."
+    },
+    {
+        "latin": "Timeo Danaos et dona ferentes.",
+        "translation": "I fear the Greeks, even when they bring gifts. Do not trust to the kindness of a foe. According to Vergil, these were the last words of prophet Laocoon, warning the Trojans about the present of the Trojan Horse.  Laocoon was strangled by the monster from the sea and his warning was disregarded."
+    },
+    {
+        "latin": "Ubi bene, ibi patria.",
+        "translation": "Where one feels good, there is one's homeland."
+    },
+    {
+        "latin": "Ubi concordia, ibi victoria.",
+        "translation": "Where is unity, there is the victory."
+    },
+    {
+        "latin": "Ubi maior, minor cessat.",
+        "translation": "The weak (minor) capitulates before the strong (major)."
+    },
+    {
+        "latin": "Una hirundo non facit ver.",
+        "translation": "One Swallow does not make Summer."
+    },
+    {
+        "latin": "Ut ameris, ama!",
+        "translation": "To be loved, love!"
+    },
+    {
+        "latin": "Uva uvam videndo varia fit.",
+        "translation": "A grape changes color in seeing another grape. A bad/good friend makes you a bad/good person."
+    },
+    {
+        "latin": "Vade mecum.",
+        "translation": "Come with me. A constant companion."
+    },
+    {
+        "latin": "Vae victis!",
+        "translation": "Woe to the vanquished! After he defeated the Romans in 390 BC, the leader of the Gauls Brennus agreed that for payment of a thousand pounds of gold, he would withdraw his army.  According to Livy, when the Romans complained that sets of weights for weighing out the gold brought by Gauls were too heavy, one of the Gaulish warriors tossed his sword into the balance pan, uttering these words."
+    },
+    {
+        "latin": "Varietas delectat.",
+        "translation": "Diversity is delightful."
+    },
+    {
+        "latin": "Veni, vidi, vici!",
+        "translation": "I came, I saw, I conquered. Easy accomplishment."
+    },
+    {
+        "latin": "Verba movent, exempla trahunt.",
+        "translation": "Words move people, examples draw/compel them. Deeds, not words, give the example."
+    },
+    {
+        "latin": "Verba volant, scripta manent.",
+        "translation": "Words fly away, writings remain."
+    },
+    {
+        "latin": "Verbum sapienti satis est.",
+        "translation": "A word to the wise is sufficient. Enough said."
+    },
+    {
+        "latin": "Veritas numquam perit.",
+        "translation": "Truth never perishes."
+    },
+    {
+        "latin": "Virtus praemium est optimum.",
+        "translation": "Virtue is the highest reward."
+    },
+    {
+        "latin": "Verum et factum convertuntur.",
+        "translation": "The true and the made are interchangeable. One can know with certainty only what one have created oneself."
+    },
+    {
+        "latin": "Vis maior.",
+        "translation": "Higher force."
+    },
+    {
+        "latin": "Vitam regit fortuna, non sapientia.",
+        "translation": "Fortune, not wisdom, rules lives."
+    },
+    {
+        "latin": "Vivere disce, cogita mori.",
+        "translation": "Learn to live; Remember death."
+    },
+    {
+        "latin": "Vox populi, vox Dei.",
+        "translation": "The voice of the people is the voice of God. Public opinion is obligatory."
+    },
+    {
+        "latin": "Vulnerant omnes, ultima necat.",
+        "translation": "Every (hour) wounds, the last kills."
+    },
+    {
+        "latin": "Vulpem pilum mutat, non mores.",
+        "translation": "A fox may change its hair, not its tricks. People change behaviour but not their aims."
+    }
+]
