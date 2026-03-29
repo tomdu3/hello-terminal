@@ -3,6 +3,7 @@ import sys
 import http.server
 import socketserver
 from datetime import datetime
+import json
 
 PORT = 8000
 
@@ -21,21 +22,13 @@ ASCII_ART = f"""{Colors.OKCYAN}{Colors.BOLD}
    |_|\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|
 {Colors.ENDC}"""
 
-PROVERBS = [
-    ("Carpe diem", "Seize the day"),
-    ("Veni, vidi, vici", "I came, I saw, I conquered"),
-    ("Audentes fortuna iuvat", "Fortune favors the bold"),
-    ("Ad astra per aspera", "To the stars through difficulties"),
-    ("Cogito ergo sum", "I think, therefore I am"),
-    ("Dum spiro, spero", "While I breathe, I hope"),
-    ("Per aspera ad astra", "Through hardships to the stars"),
-    ("Ars longa, vita brevis", "Art is long, life is short"),
-    ("In vino veritas", "In wine there is truth")
-]
+with open("latin_proverbs.json", "r", encoding="utf-8") as f:
+    PROVERBS = json.load(f)
 
 def get_proverb_of_the_day():
     day_of_year = datetime.now().timetuple().tm_yday
-    return PROVERBS[day_of_year % len(PROVERBS)]
+    prov = PROVERBS[day_of_year % len(PROVERBS)]
+    return prov["latin"], prov["translation"]
 
 class SinglePageHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
