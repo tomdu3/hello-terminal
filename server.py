@@ -35,6 +35,45 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
         user_agent = self.headers.get('User-Agent', '').lower()
         is_terminal = any(agent in user_agent for agent in ['curl', 'wget', 'httpie'])
         
+        if self.path == '/first-declension':
+            if is_terminal:
+                self.send_response(200)
+                self.send_header("Content-type", "text/plain; charset=utf-8")
+                self.end_headers()
+                
+                declension_text = (
+                    f"{Colors.OKCYAN}{Colors.BOLD}First Latin Declension (-a, -ae){Colors.ENDC}\n\n"
+                    f"{Colors.OKGREEN}Singular:{Colors.ENDC}\n"
+                    f"  Nom: -a     (terr-a)\n"
+                    f"  Gen: -ae    (terr-ae)\n"
+                    f"  Dat: -ae    (terr-ae)\n"
+                    f"  Acc: -am    (terr-am)\n"
+                    f"  Abl: -ā     (terr-ā)\n"
+                    f"  Voc: -a     (terr-a)\n\n"
+                    f"{Colors.OKGREEN}Plural:{Colors.ENDC}\n"
+                    f"  Nom: -ae    (terr-ae)\n"
+                    f"  Gen: -ārum  (terr-ārum)\n"
+                    f"  Dat: -īs    (terr-īs)\n"
+                    f"  Acc: -ās    (terr-ās)\n"
+                    f"  Abl: -īs    (terr-īs)\n"
+                    f"  Voc: -ae    (terr-ae)\n\n"
+                    f"{Colors.BOLD}Rules:{Colors.ENDC}\n"
+                    f"- Mostly feminine nouns (e.g., puella, insula).\n"
+                    f"- Exceptions include some masculine nouns denoting occupations (e.g., nauta, agricola, poēta).\n\n"
+                )
+                self.wfile.write(declension_text.encode('utf-8'))
+            else:
+                self.send_response(200)
+                self.send_header("Content-type", "text/html; charset=utf-8")
+                self.end_headers()
+                
+                with open("templates/first_declension.html", "r", encoding="utf-8") as f:
+                    html_template = f.read()
+                
+                html_response = html_template.replace("{{port}}", str(PORT))
+                self.wfile.write(html_response.encode('utf-8'))
+            return
+
         latin, english = get_proverb_of_the_day()
         
         if is_terminal:
