@@ -16,14 +16,14 @@ class Colors:
 
 def render(t) -> str:
     """Custom template handler for PEP 750 templates."""
-    return "".join(str(s) + str(v) for s, v in zip(t.strings, t.interpolations)) + t.strings[-1]
+    return "".join(str(s) + format(v.value, v.format_spec or "") for s, v in zip(t.strings, t.interpolations)) + str(t.strings[-1])
 
 ASCII_ART = render(t"""{Colors.OKCYAN}{Colors.BOLD}
   _____                   _             _ 
  |_   _|___ _ __ _ __ ___(_)_ __   __ _| |
-   | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
+   | |/ _ \\ '__| '_ ` _ \\| | '_ \\ / _` | |
    | |  __/ |  | | | | | | | | | | (_| | |
-   |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
+   |_|\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|
 {Colors.ENDC}""")
 
 with open("latin_proverbs.json", "r", encoding="utf-8") as f:
@@ -136,6 +136,68 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
                 self.end_headers()
                 
                 with open("templates/second_declension.html", "r", encoding="utf-8") as f:
+                    html_template = f.read()
+                
+                html_response = html_template.replace("{{port}}", str(PORT))
+                self.wfile.write(html_response.encode('utf-8'))
+            return
+
+        elif self.path == '/third-declension':
+            if is_terminal:
+                self.send_response(200)
+                self.send_header("Content-type", "text/plain; charset=utf-8")
+                self.end_headers()
+                
+                declension_text = render(t"""{Colors.OKCYAN}{Colors.BOLD}Third Latin Declension (-is){Colors.ENDC}
+
+{Colors.BOLD}Masculine / Feminine{Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: —      (rēx)
+  Gen: -is    (rēg-is)
+  Dat: -ī     (rēg-ī)
+  Acc: -em    (rēg-em)
+  Abl: -e     (rēg-e)
+  Voc: —      (rēx)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ēs    (rēg-ēs)
+  Gen: -um    (rēg-um)
+  Dat: -ibus  (rēg-ibus)
+  Acc: -ēs    (rēg-ēs)
+  Abl: -ibus  (rēg-ibus)
+  Voc: -ēs    (rēg-ēs)
+
+{Colors.BOLD}Neuter{Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: —      (flūmen)
+  Gen: -is    (flūmin-is)
+  Dat: -ī     (flūmin-ī)
+  Acc: —      (flūmen)
+  Abl: -e     (flūmin-e)
+  Voc: —      (flūmen)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -a     (flūmin-a)
+  Gen: -um    (flūmin-um)
+  Dat: -ibus  (flūmin-ibus)
+  Acc: -a     (flūmin-a)
+  Abl: -ibus  (flūmin-ibus)
+  Voc: -a     (flūmin-a)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Contains masculine, feminine, and neuter nouns. The genitive singular always ends in -is.
+- The nominative singular has variable endings.
+- Neuter Rule: Nominative, accusative, and vocative cases are identical, and in the plural they end in -a.
+- "I-stem" nouns (e.g., urbs, mare) have slightly different endings (e.g., genitive plural -ium).
+
+""")
+                self.wfile.write(declension_text.encode('utf-8'))
+            else:
+                self.send_response(200)
+                self.send_header("Content-type", "text/html; charset=utf-8")
+                self.end_headers()
+                
+                with open("templates/third_declension.html", "r", encoding="utf-8") as f:
                     html_template = f.read()
                 
                 html_response = html_template.replace("{{port}}", str(PORT))
