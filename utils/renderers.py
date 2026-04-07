@@ -6,12 +6,12 @@ class Colors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
 
-ASCII_ART = f"""{Colors.OKCYAN}{Colors.BOLD}
+ASCII_ART = fr"""{Colors.OKCYAN}{Colors.BOLD}
   _____                   _             _ 
  |_   _|___ _ __ _ __ ___(_)_ __   __ _| |
-   | |/ _ \\ '__| '_ ` _ \\| | '_ \\ / _` | |
+   | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
    | |  __/ |  | | | | | | | | | | (_| | |
-   |_|\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|
+   |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
 {Colors.ENDC}"""
 
 def html_renderer(template_name: str, **kwargs) -> str:
