@@ -266,6 +266,51 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
                 self.wfile.write(html_response.encode('utf-8'))
             return
 
+        elif self.path == '/fifth-declension':
+            if is_terminal:
+                self.send_response(200)
+                self.send_header("Content-type", "text/plain; charset=utf-8")
+                self.end_headers()
+                
+                declension_text = render(t"""{Colors.OKCYAN}{Colors.BOLD}Fifth Latin Declension (-ēs, -eī){Colors.ENDC}
+
+{Colors.BOLD}Feminine / Masculine (-ēs){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -ēs    (r-ēs)
+  Gen: -eī    (r-eī)
+  Dat: -eī    (r-eī)
+  Acc: -em    (r-em)
+  Abl: -ē     (r-ē)
+  Voc: -ēs    (r-ēs)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ēs    (r-ēs)
+  Gen: -ērum  (r-ērum)
+  Dat: -ēbus  (r-ēbus)
+  Acc: -ēs    (r-ēs)
+  Abl: -ēbus  (r-ēbus)
+  Voc: -ēs    (r-ēs)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Almost all nouns of the fifth declension are feminine.
+- The main exceptions are diēs (day) and merīdiēs (midday), which are masculine, though diēs can be feminine in the singular when referring to a specific set date.
+- The nominative, accusative, and vocative plural are identical (-ēs).
+- The dative and ablative plural are also identical (-ēbus).
+
+""")
+                self.wfile.write(declension_text.encode('utf-8'))
+            else:
+                self.send_response(200)
+                self.send_header("Content-type", "text/html; charset=utf-8")
+                self.end_headers()
+                
+                with open("templates/fifth_declension.html", "r", encoding="utf-8") as f:
+                    html_template = f.read()
+                
+                html_response = html_template.replace("{{port}}", str(PORT))
+                self.wfile.write(html_response.encode('utf-8'))
+            return
+
         latin, english = get_proverb_of_the_day()
         
         if is_terminal:
