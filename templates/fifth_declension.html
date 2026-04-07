@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Latin Declension</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #162447;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #0f3460;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            text-align: left;
+            color: #e94560;
+            max-width: 650px;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+            margin-top: 0;
+        }
+        h2 {
+            color: #00ffcc;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .tables {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        table {
+            color: #ffffff;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 8px 15px;
+            border: 1px solid #4a4e69;
+            text-align: center;
+        }
+        th {
+            color: #00ffcc;
+            background-color: #162447;
+        }
+        .rules {
+            color: #a0a0a0;
+            margin-top: 30px;
+            background-color: #162447;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .rules ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fifth Latin Declension (-ēs, -eī)</h1>
+        
+        <h2>Feminine / Masculine (-ēs)</h2>
+        <div class="tables">
+            <table>
+                <tr><th colspan="3">Singular</th></tr>
+                <tr><th>Case</th><th>Ending</th><th>Example (rēs)</th></tr>
+                <tr><td>Nom</td><td>-ēs</td><td>r-ēs</td></tr>
+                <tr><td>Gen</td><td>-eī</td><td>r-eī</td></tr>
+                <tr><td>Dat</td><td>-eī</td><td>r-eī</td></tr>
+                <tr><td>Acc</td><td>-em</td><td>r-em</td></tr>
+                <tr><td>Abl</td><td>-ē</td><td>r-ē</td></tr>
+                <tr><td>Voc</td><td>-ēs</td><td>r-ēs</td></tr>
+            </table>
+            <table>
+                <tr><th colspan="3">Plural</th></tr>
+                <tr><th>Case</th><th>Ending</th><th>Example (rēs)</th></tr>
+                <tr><td>Nom</td><td>-ēs</td><td>r-ēs</td></tr>
+                <tr><td>Gen</td><td>-ērum</td><td>r-ērum</td></tr>
+                <tr><td>Dat</td><td>-ēbus</td><td>r-ēbus</td></tr>
+                <tr><td>Acc</td><td>-ēs</td><td>r-ēs</td></tr>
+                <tr><td>Abl</td><td>-ēbus</td><td>r-ēbus</td></tr>
+                <tr><td>Voc</td><td>-ēs</td><td>r-ēs</td></tr>
+            </table>
+        </div>
+
+        <div class="rules">
+            <strong><span style="color: #00ffcc;">Rules:</span></strong>
+            <ul>
+                <li>Almost all nouns of the fifth declension are feminine.</li>
+                <li>The main exceptions are <em>diēs</em> (day) and <em>merīdiēs</em> (midday), which are masculine, though <em>diēs</em> can be feminine in the singular when referring to a specific set date.</li>
+                <li>The nominative, accusative, and vocative plural are identical (<em>-ēs</em>).</li>
+                <li>The dative and ablative plural are also identical (<em>-ēbus</em>).</li>
+            </ul>
+        </div>
+        <p style="color: #fff; margin-top: 30px; text-align: center;">(Try curling this page from your terminal! <br><code>curl http://localhost:{{port}}/fifth-declension</code>)</p>
+    </div>
+</body>
+</html>
