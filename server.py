@@ -14,13 +14,17 @@ class Colors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
 
-ASCII_ART = f"""{Colors.OKCYAN}{Colors.BOLD}
+def render(t) -> str:
+    """Custom template handler for PEP 750 templates."""
+    return "".join(str(s) + str(v) for s, v in zip(t.strings, t.interpolations)) + t.strings[-1]
+
+ASCII_ART = render(t"""{Colors.OKCYAN}{Colors.BOLD}
   _____                   _             _ 
  |_   _|___ _ __ _ __ ___(_)_ __   __ _| |
-   | |/ _ \\ '__| '_ ` _ \\| | '_ \\ / _` | |
+   | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
    | |  __/ |  | | | | | | | | | | (_| | |
-   |_|\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_|
-{Colors.ENDC}"""
+   |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
+{Colors.ENDC}""")
 
 with open("latin_proverbs.json", "r", encoding="utf-8") as f:
     PROVERBS = json.load(f)
@@ -41,26 +45,29 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
                 self.send_header("Content-type", "text/plain; charset=utf-8")
                 self.end_headers()
                 
-                declension_text = (
-                    f"{Colors.OKCYAN}{Colors.BOLD}First Latin Declension (-a, -ae){Colors.ENDC}\n\n"
-                    f"{Colors.OKGREEN}Singular:{Colors.ENDC}\n"
-                    f"  Nom: -a     (terr-a)\n"
-                    f"  Gen: -ae    (terr-ae)\n"
-                    f"  Dat: -ae    (terr-ae)\n"
-                    f"  Acc: -am    (terr-am)\n"
-                    f"  Abl: -ā     (terr-ā)\n"
-                    f"  Voc: -a     (terr-a)\n\n"
-                    f"{Colors.OKGREEN}Plural:{Colors.ENDC}\n"
-                    f"  Nom: -ae    (terr-ae)\n"
-                    f"  Gen: -ārum  (terr-ārum)\n"
-                    f"  Dat: -īs    (terr-īs)\n"
-                    f"  Acc: -ās    (terr-ās)\n"
-                    f"  Abl: -īs    (terr-īs)\n"
-                    f"  Voc: -ae    (terr-ae)\n\n"
-                    f"{Colors.BOLD}Rules:{Colors.ENDC}\n"
-                    f"- Mostly feminine nouns (e.g., puella, insula).\n"
-                    f"- Exceptions include some masculine nouns denoting occupations (e.g., nauta, agricola, poēta).\n\n"
-                )
+                declension_text = render(t"""{Colors.OKCYAN}{Colors.BOLD}First Latin Declension (-a, -ae){Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -a     (terr-a)
+  Gen: -ae    (terr-ae)
+  Dat: -ae    (terr-ae)
+  Acc: -am    (terr-am)
+  Abl: -ā     (terr-ā)
+  Voc: -a     (terr-a)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ae    (terr-ae)
+  Gen: -ārum  (terr-ārum)
+  Dat: -īs    (terr-īs)
+  Acc: -ās    (terr-ās)
+  Abl: -īs    (terr-īs)
+  Voc: -ae    (terr-ae)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Mostly feminine nouns (e.g., puella, insula).
+- Exceptions include some masculine nouns denoting occupations (e.g., nauta, agricola, poēta).
+
+""")
                 self.wfile.write(declension_text.encode('utf-8'))
             else:
                 self.send_response(200)
@@ -80,43 +87,48 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
                 self.send_header("Content-type", "text/plain; charset=utf-8")
                 self.end_headers()
                 
-                declension_text = (
-                    f"{Colors.OKCYAN}{Colors.BOLD}Second Latin Declension (-us, -i / -um, -i){Colors.ENDC}\n\n"
-                    f"{Colors.BOLD}Masculine (-us){Colors.ENDC}\n"
-                    f"{Colors.OKGREEN}Singular:{Colors.ENDC}\n"
-                    f"  Nom: -us    (serv-us)\n"
-                    f"  Gen: -ī     (serv-ī)\n"
-                    f"  Dat: -ō     (serv-ō)\n"
-                    f"  Acc: -um    (serv-um)\n"
-                    f"  Abl: -ō     (serv-ō)\n"
-                    f"  Voc: -e     (serv-e)\n\n"
-                    f"{Colors.OKGREEN}Plural:{Colors.ENDC}\n"
-                    f"  Nom: -ī     (serv-ī)\n"
-                    f"  Gen: -ōrum  (serv-ōrum)\n"
-                    f"  Dat: -īs    (serv-īs)\n"
-                    f"  Acc: -ōs    (serv-ōs)\n"
-                    f"  Abl: -īs    (serv-īs)\n"
-                    f"  Voc: -ī     (serv-ī)\n\n"
-                    f"{Colors.BOLD}Neuter (-um){Colors.ENDC}\n"
-                    f"{Colors.OKGREEN}Singular:{Colors.ENDC}\n"
-                    f"  Nom: -um    (bell-um)\n"
-                    f"  Gen: -ī     (bell-ī)\n"
-                    f"  Dat: -ō     (bell-ō)\n"
-                    f"  Acc: -um    (bell-um)\n"
-                    f"  Abl: -ō     (bell-ō)\n"
-                    f"  Voc: -um    (bell-um)\n\n"
-                    f"{Colors.OKGREEN}Plural:{Colors.ENDC}\n"
-                    f"  Nom: -a     (bell-a)\n"
-                    f"  Gen: -ōrum  (bell-ōrum)\n"
-                    f"  Dat: -īs    (bell-īs)\n"
-                    f"  Acc: -a     (bell-a)\n"
-                    f"  Abl: -īs    (bell-īs)\n"
-                    f"  Voc: -a     (bell-a)\n\n"
-                    f"{Colors.BOLD}Rules:{Colors.ENDC}\n"
-                    f"- Includes mostly masculine (-us, -er, -ir) and neuter (-um) nouns.\n"
-                    f"- Neuter Rule: Nominative, accusative, and vocative are identical, and in the plural end in -a.\n"
-                    f"- The vocative of masculine nouns ending in -us ends in -e (serve). Nouns in -ius end in -ī (fīlī).\n\n"
-                )
+                declension_text = render(t"""{Colors.OKCYAN}{Colors.BOLD}Second Latin Declension (-us, -i / -um, -i){Colors.ENDC}
+
+{Colors.BOLD}Masculine (-us){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -us    (serv-us)
+  Gen: -ī     (serv-ī)
+  Dat: -ō     (serv-ō)
+  Acc: -um    (serv-um)
+  Abl: -ō     (serv-ō)
+  Voc: -e     (serv-e)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ī     (serv-ī)
+  Gen: -ōrum  (serv-ōrum)
+  Dat: -īs    (serv-īs)
+  Acc: -ōs    (serv-ōs)
+  Abl: -īs    (serv-īs)
+  Voc: -ī     (serv-ī)
+
+{Colors.BOLD}Neuter (-um){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -um    (bell-um)
+  Gen: -ī     (bell-ī)
+  Dat: -ō     (bell-ō)
+  Acc: -um    (bell-um)
+  Abl: -ō     (bell-ō)
+  Voc: -um    (bell-um)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -a     (bell-a)
+  Gen: -ōrum  (bell-ōrum)
+  Dat: -īs    (bell-īs)
+  Acc: -a     (bell-a)
+  Abl: -īs    (bell-īs)
+  Voc: -a     (bell-a)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Includes mostly masculine (-us, -er, -ir) and neuter (-um) nouns.
+- Neuter Rule: Nominative, accusative, and vocative are identical, and in the plural end in -a.
+- The vocative of masculine nouns ending in -us ends in -e (serve). Nouns in -ius end in -ī (fīlī).
+
+""")
                 self.wfile.write(declension_text.encode('utf-8'))
             else:
                 self.send_response(200)
@@ -138,11 +150,11 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/plain; charset=utf-8")
             self.end_headers()
             
-            response = (
-                f"{ASCII_ART}\n"
-                f"{Colors.OKGREEN}Latin Proverb of the Day:{Colors.ENDC}\n"
-                f"{Colors.BOLD}{latin}{Colors.ENDC} - {english}\n\n"
-            )
+            response = render(t"""{ASCII_ART}
+{Colors.OKGREEN}Latin Proverb of the Day:{Colors.ENDC}
+{Colors.BOLD}{latin}{Colors.ENDC} - {english}
+
+""")
             self.wfile.write(response.encode('utf-8'))
         else:
             ### HTML response
