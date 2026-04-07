@@ -204,6 +204,68 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
                 self.wfile.write(html_response.encode('utf-8'))
             return
 
+        elif self.path == '/fourth-declension':
+            if is_terminal:
+                self.send_response(200)
+                self.send_header("Content-type", "text/plain; charset=utf-8")
+                self.end_headers()
+                
+                declension_text = render(t"""{Colors.OKCYAN}{Colors.BOLD}Fourth Latin Declension (-us, -ūs / -ū, -ūs){Colors.ENDC}
+
+{Colors.BOLD}Masculine (-us){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -us    (port-us)
+  Gen: -ūs    (port-ūs)
+  Dat: -uī    (port-uī)
+  Acc: -um    (port-um)
+  Abl: -ū     (port-ū)
+  Voc: -us    (port-us)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ūs    (port-ūs)
+  Gen: -uum   (port-uum)
+  Dat: -ibus  (port-ibus)
+  Acc: -ūs    (port-ūs)
+  Abl: -ibus  (port-ibus)
+  Voc: -ūs    (port-ūs)
+
+{Colors.BOLD}Neuter (-ū){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -ū     (corn-ū)
+  Gen: -ūs    (corn-ūs)
+  Dat: -ū     (corn-ū)
+  Acc: -ū     (corn-ū)
+  Abl: -ū     (corn-ū)
+  Voc: -ū     (corn-ū)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ua    (corn-ua)
+  Gen: -uum   (corn-uum)
+  Dat: -ibus  (corn-ibus)
+  Acc: -ua    (corn-ua)
+  Abl: -ibus  (corn-ibus)
+  Voc: -ua    (corn-ua)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Contains mostly masculine nouns ending in -us and a few neuter nouns ending in -ū.
+- Some important feminine exceptions end in -us, such as manus (hand) and domus (house).
+- Neuter Rule: Nominative, accusative, and vocative cases are identical, and in the plural they end in -a (specifically -ua).
+- The genitive singular and nominative/accusative/vocative plural of masculine nouns are identical (-ūs).
+
+""")
+                self.wfile.write(declension_text.encode('utf-8'))
+            else:
+                self.send_response(200)
+                self.send_header("Content-type", "text/html; charset=utf-8")
+                self.end_headers()
+                
+                with open("templates/fourth_declension.html", "r", encoding="utf-8") as f:
+                    html_template = f.read()
+                
+                html_response = html_template.replace("{{port}}", str(PORT))
+                self.wfile.write(html_response.encode('utf-8'))
+            return
+
         latin, english = get_proverb_of_the_day()
         
         if is_terminal:
