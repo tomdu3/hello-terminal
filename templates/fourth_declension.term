@@ -1,0 +1,42 @@
+{Colors.OKCYAN}{Colors.BOLD}Fourth Latin Declension (-us, -ūs / -ū, -ūs){Colors.ENDC}
+
+{Colors.BOLD}Masculine (-us){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -us    (port-us)
+  Gen: -ūs    (port-ūs)
+  Dat: -uī    (port-uī)
+  Acc: -um    (port-um)
+  Abl: -ū     (port-ū)
+  Voc: -us    (port-us)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ūs    (port-ūs)
+  Gen: -uum   (port-uum)
+  Dat: -ibus  (port-ibus)
+  Acc: -ūs    (port-ūs)
+  Abl: -ibus  (port-ibus)
+  Voc: -ūs    (port-ūs)
+
+{Colors.BOLD}Neuter (-ū){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -ū     (corn-ū)
+  Gen: -ūs    (corn-ūs)
+  Dat: -ū     (corn-ū)
+  Acc: -ū     (corn-ū)
+  Abl: -ū     (corn-ū)
+  Voc: -ū     (corn-ū)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ua    (corn-ua)
+  Gen: -uum   (corn-uum)
+  Dat: -ibus  (corn-ibus)
+  Acc: -ua    (corn-ua)
+  Abl: -ibus  (corn-ibus)
+  Voc: -ua    (corn-ua)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Contains mostly masculine nouns ending in -us and a few neuter nouns ending in -ū.
+- Some important feminine exceptions end in -us, such as manus (hand) and domus (house).
+- Neuter Rule: Nominative, accusative, and vocative cases are identical, and in the plural they end in -a (specifically -ua).
+- The genitive singular and nominative/accusative/vocative plural of masculine nouns are identical (-ūs).
+

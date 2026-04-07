@@ -1,0 +1,25 @@
+{Colors.OKCYAN}{Colors.BOLD}Fifth Latin Declension (-ēs, -eī){Colors.ENDC}
+
+{Colors.BOLD}Feminine / Masculine (-ēs){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -ēs    (r-ēs)
+  Gen: -eī    (r-eī)
+  Dat: -eī    (r-eī)
+  Acc: -em    (r-em)
+  Abl: -ē     (r-ē)
+  Voc: -ēs    (r-ēs)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ēs    (r-ēs)
+  Gen: -ērum  (r-ērum)
+  Dat: -ēbus  (r-ēbus)
+  Acc: -ēs    (r-ēs)
+  Abl: -ēbus  (r-ēbus)
+  Voc: -ēs    (r-ēs)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Almost all nouns of the fifth declension are feminine.
+- The main exceptions are diēs (day) and merīdiēs (midday), which are masculine, though diēs can be feminine in the singular when referring to a specific set date.
+- The nominative, accusative, and vocative plural are identical (-ēs).
+- The dative and ablative plural are also identical (-ēbus).
+

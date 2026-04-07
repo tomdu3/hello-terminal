@@ -1,0 +1,42 @@
+{Colors.OKCYAN}{Colors.BOLD}Third Latin Declension (-is){Colors.ENDC}
+
+{Colors.BOLD}Masculine / Feminine{Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: —      (rēx)
+  Gen: -is    (rēg-is)
+  Dat: -ī     (rēg-ī)
+  Acc: -em    (rēg-em)
+  Abl: -e     (rēg-e)
+  Voc: —      (rēx)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ēs    (rēg-ēs)
+  Gen: -um    (rēg-um)
+  Dat: -ibus  (rēg-ibus)
+  Acc: -ēs    (rēg-ēs)
+  Abl: -ibus  (rēg-ibus)
+  Voc: -ēs    (rēg-ēs)
+
+{Colors.BOLD}Neuter{Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: —      (flūmen)
+  Gen: -is    (flūmin-is)
+  Dat: -ī     (flūmin-ī)
+  Acc: —      (flūmen)
+  Abl: -e     (flūmin-e)
+  Voc: —      (flūmen)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -a     (flūmin-a)
+  Gen: -um    (flūmin-um)
+  Dat: -ibus  (flūmin-ibus)
+  Acc: -a     (flūmin-a)
+  Abl: -ibus  (flūmin-ibus)
+  Voc: -a     (flūmin-a)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Contains masculine, feminine, and neuter nouns. The genitive singular always ends in -is.
+- The nominative singular has variable endings.
+- Neuter Rule: Nominative, accusative, and vocative cases are identical, and in the plural they end in -a.
+- "I-stem" nouns (e.g., urbs, mare) have slightly different endings (e.g., genitive plural -ium).
+

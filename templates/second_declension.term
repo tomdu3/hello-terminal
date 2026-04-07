@@ -1,0 +1,41 @@
+{Colors.OKCYAN}{Colors.BOLD}Second Latin Declension (-us, -i / -um, -i){Colors.ENDC}
+
+{Colors.BOLD}Masculine (-us){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -us    (serv-us)
+  Gen: -ī     (serv-ī)
+  Dat: -ō     (serv-ō)
+  Acc: -um    (serv-um)
+  Abl: -ō     (serv-ō)
+  Voc: -e     (serv-e)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ī     (serv-ī)
+  Gen: -ōrum  (serv-ōrum)
+  Dat: -īs    (serv-īs)
+  Acc: -ōs    (serv-ōs)
+  Abl: -īs    (serv-īs)
+  Voc: -ī     (serv-ī)
+
+{Colors.BOLD}Neuter (-um){Colors.ENDC}
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -um    (bell-um)
+  Gen: -ī     (bell-ī)
+  Dat: -ō     (bell-ō)
+  Acc: -um    (bell-um)
+  Abl: -ō     (bell-ō)
+  Voc: -um    (bell-um)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -a     (bell-a)
+  Gen: -ōrum  (bell-ōrum)
+  Dat: -īs    (bell-īs)
+  Acc: -a     (bell-a)
+  Abl: -īs    (bell-īs)
+  Voc: -a     (bell-a)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Includes mostly masculine (-us, -er, -ir) and neuter (-um) nouns.
+- Neuter Rule: Nominative, accusative, and vocative are identical, and in the plural end in -a.
+- The vocative of masculine nouns ending in -us ends in -e (serve). Nouns in -ius end in -ī (fīlī).
+

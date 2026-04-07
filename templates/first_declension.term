@@ -1,0 +1,22 @@
+{Colors.OKCYAN}{Colors.BOLD}First Latin Declension (-a, -ae){Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  Nom: -a     (terr-a)
+  Gen: -ae    (terr-ae)
+  Dat: -ae    (terr-ae)
+  Acc: -am    (terr-am)
+  Abl: -ā     (terr-ā)
+  Voc: -a     (terr-a)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  Nom: -ae    (terr-ae)
+  Gen: -ārum  (terr-ārum)
+  Dat: -īs    (terr-īs)
+  Acc: -ās    (terr-ās)
+  Abl: -īs    (terr-īs)
+  Voc: -ae    (terr-ae)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Mostly feminine nouns (e.g., puella, insula).
+- Exceptions include some masculine nouns denoting occupations (e.g., nauta, agricola, poēta).
+
