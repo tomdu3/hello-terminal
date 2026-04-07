@@ -17,114 +17,44 @@ def get_proverb_of_the_day():
     prov = PROVERBS[day_of_year % len(PROVERBS)]
     return prov["latin"], prov["translation"]
 
+STATIC_ROUTES = {
+    '/first-declension': 'first_declension',
+    '/second-declension': 'second_declension',
+    '/third-declension': 'third_declension',
+    '/fourth-declension': 'fourth_declension',
+    '/fifth-declension': 'fifth_declension',
+}
+
+def serve_template(handler, template_basename, context=None):
+    """Universally handles HTTP response formatting for both terminal and web clients."""
+    if context is None:
+        context = {}
+    
+    user_agent = handler.headers.get('User-Agent', '').lower()
+    is_terminal = any(agent in user_agent for agent in ['curl', 'wget', 'httpie'])
+    
+    if is_terminal:
+        handler.send_response(200)
+        handler.send_header("Content-type", "text/plain; charset=utf-8")
+        handler.end_headers()
+        content = terminal_renderer(f"{template_basename}.term", **context)
+        handler.wfile.write(content.encode('utf-8'))
+    else:
+        handler.send_response(200)
+        handler.send_header("Content-type", "text/html; charset=utf-8")
+        handler.end_headers()
+        content = html_renderer(f"{template_basename}.html", **context)
+        handler.wfile.write(content.encode('utf-8'))
+
 class SinglePageHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
-        user_agent = self.headers.get('User-Agent', '').lower()
-        is_terminal = any(agent in user_agent for agent in ['curl', 'wget', 'httpie'])
-        
-        if self.path == '/first-declension':
-            if is_terminal:
-                self.send_response(200)
-                self.send_header("Content-type", "text/plain; charset=utf-8")
-                self.end_headers()
-                
-                declension_text = terminal_renderer("first_declension.term")
-                self.wfile.write(declension_text.encode('utf-8'))
-            else:
-                self.send_response(200)
-                self.send_header("Content-type", "text/html; charset=utf-8")
-                self.end_headers()
-                
-                html_response = html_renderer("first_declension.html", port=PORT)
-                self.wfile.write(html_response.encode('utf-8'))
+        if self.path in STATIC_ROUTES:
+            serve_template(self, STATIC_ROUTES[self.path], {"port": PORT})
             return
 
-        elif self.path == '/second-declension':
-            if is_terminal:
-                self.send_response(200)
-                self.send_header("Content-type", "text/plain; charset=utf-8")
-                self.end_headers()
-                
-                declension_text = terminal_renderer("second_declension.term")
-                self.wfile.write(declension_text.encode('utf-8'))
-            else:
-                self.send_response(200)
-                self.send_header("Content-type", "text/html; charset=utf-8")
-                self.end_headers()
-                
-                html_response = html_renderer("second_declension.html", port=PORT)
-                self.wfile.write(html_response.encode('utf-8'))
-            return
-
-        elif self.path == '/third-declension':
-            if is_terminal:
-                self.send_response(200)
-                self.send_header("Content-type", "text/plain; charset=utf-8")
-                self.end_headers()
-                
-                declension_text = terminal_renderer("third_declension.term")
-                self.wfile.write(declension_text.encode('utf-8'))
-            else:
-                self.send_response(200)
-                self.send_header("Content-type", "text/html; charset=utf-8")
-                self.end_headers()
-                
-                html_response = html_renderer("third_declension.html", port=PORT)
-                self.wfile.write(html_response.encode('utf-8'))
-            return
-
-        elif self.path == '/fourth-declension':
-            if is_terminal:
-                self.send_response(200)
-                self.send_header("Content-type", "text/plain; charset=utf-8")
-                self.end_headers()
-                
-                declension_text = terminal_renderer("fourth_declension.term")
-                self.wfile.write(declension_text.encode('utf-8'))
-            else:
-                self.send_response(200)
-                self.send_header("Content-type", "text/html; charset=utf-8")
-                self.end_headers()
-                
-                html_response = html_renderer("fourth_declension.html", port=PORT)
-                self.wfile.write(html_response.encode('utf-8'))
-            return
-
-        elif self.path == '/fifth-declension':
-            if is_terminal:
-                self.send_response(200)
-                self.send_header("Content-type", "text/plain; charset=utf-8")
-                self.end_headers()
-                
-                declension_text = terminal_renderer("fifth_declension.term")
-                self.wfile.write(declension_text.encode('utf-8'))
-            else:
-                self.send_response(200)
-                self.send_header("Content-type", "text/html; charset=utf-8")
-                self.end_headers()
-                
-                html_response = html_renderer("fifth_declension.html", port=PORT)
-                self.wfile.write(html_response.encode('utf-8'))
-            return
-
+        # Default to Proverb of the Day
         latin, english = get_proverb_of_the_day()
-        
-        if is_terminal:
-            ### Terminal response
-            self.send_response(200)
-            self.send_header("Content-type", "text/plain; charset=utf-8")
-            self.end_headers()
-            
-            response = terminal_renderer("base.term", latin=latin, english=english)
-            self.wfile.write(response.encode('utf-8'))
-        else:
-            ### HTML response
-            self.send_response(200)
-            self.send_header("Content-type", "text/html; charset=utf-8")
-            self.end_headers()
-            
-            html_response = html_renderer("base.html", latin=latin, english=english, port=PORT)
-            self.wfile.write(html_response.encode('utf-8'))
+        serve_template(self, "base", {"latin": latin, "english": english, "port": PORT})
 
 if __name__ == "__main__":
     socketserver.TCPServer.allow_reuse_address = True
