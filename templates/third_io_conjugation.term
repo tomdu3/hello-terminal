@@ -1,0 +1,17 @@
+{Colors.OKCYAN}{Colors.BOLD}Third Latin Conjugation -io (-ere){Colors.ENDC}
+{Colors.OKCYAN}Present Active Indicative{Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  1st: -iō     (capiō)
+  2nd: -is     (capis)
+  3rd: -it     (capit)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  1st: -imus   (capimus)
+  2nd: -itis   (capitis)
+  3rd: -iunt   (capiunt)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Mixes features of the 3rd and 4th conjugations.
+- Like the 4th conjugation, it has -iō in the 1st person singular and -iunt in the 3rd person plural.
+- Examples: capere (to take), facere (to do), jacere (to throw).

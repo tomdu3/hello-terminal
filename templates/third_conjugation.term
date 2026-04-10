@@ -1,0 +1,17 @@
+{Colors.OKCYAN}{Colors.BOLD}Third Latin Conjugation (-ere){Colors.ENDC}
+{Colors.OKCYAN}Present Active Indicative{Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  1st: -ō      (regō)
+  2nd: -is     (regis)
+  3rd: -it     (regit)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  1st: -imus   (regimus)
+  2nd: -itis   (regitis)
+  3rd: -unt    (regunt)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Characterized by a short -e- in the infinitive, which often changes to -i- or -u-.
+- The stem vowel disappears in the 1st person singular.
+- Examples: regere (to rule), dūcere (to lead), scrībere (to write).

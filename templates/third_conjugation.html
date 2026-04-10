@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Latin Conjugation</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #162447;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #0f3460;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            text-align: left;
+            color: #e94560;
+            max-width: 600px;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+        }
+        .tables {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        table {
+            color: #ffffff;
+            margin: 0 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 15px;
+            border: 1px solid #4a4e69;
+            text-align: center;
+        }
+        th {
+            color: #00ffcc;
+            background-color: #162447;
+        }
+        .rules {
+            color: #a0a0a0;
+            margin-top: 20px;
+            background-color: #162447;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .rules ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Third Latin Conjugation (-ere)</h1>
+        <p style="text-align: center; color: #fff;">Present Active Indicative</p>
+        <div class="tables">
+            <table>
+                <tr><th colspan="3">Singular</th></tr>
+                <tr><th>Person</th><th>Ending</th><th>Example (reg-ere)</th></tr>
+                <tr><td>1st</td><td>-ō</td><td>regō</td></tr>
+                <tr><td>2nd</td><td>-is</td><td>regis</td></tr>
+                <tr><td>3rd</td><td>-it</td><td>regit</td></tr>
+            </table>
+            <table>
+                <tr><th colspan="3">Plural</th></tr>
+                <tr><th>Person</th><th>Ending</th><th>Example (reg-ere)</th></tr>
+                <tr><td>1st</td><td>-imus</td><td>regimus</td></tr>
+                <tr><td>2nd</td><td>-itis</td><td>regitis</td></tr>
+                <tr><td>3rd</td><td>-unt</td><td>regunt</td></tr>
+            </table>
+        </div>
+        <div class="rules">
+            <strong><span style="color: #00ffcc;">Rules:</span></strong>
+            <ul>
+                <li>Characterized by a short <strong>-e-</strong> in the infinitive, which often changes to <strong>-i-</strong> or <strong>-u-</strong>.</li>
+                <li>The stem vowel disappears in the 1st person singular.</li>
+                <li>Examples: <em>regere</em> (to rule), <em>dūcere</em> (to lead), <em>scrībere</em> (to write).</li>
+            </ul>
+        </div>
+        <p style="color: #fff; margin-top: 30px; text-align: center;">(Try curling this page from your terminal! <br><code>curl http://localhost:{{port}}/third-conjugation</code>)</p>
+    </div>
+</body>
+</html>
