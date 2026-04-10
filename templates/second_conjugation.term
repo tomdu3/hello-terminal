@@ -1,0 +1,17 @@
+{Colors.OKCYAN}{Colors.BOLD}Second Latin Conjugation (-ēre){Colors.ENDC}
+{Colors.OKCYAN}Present Active Indicative{Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  1st: -eō     (moneō)
+  2nd: -ēs     (monēs)
+  3rd: -et     (monet)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  1st: -ēmus   (monēmus)
+  2nd: -ētis   (monētis)
+  3rd: -ent    (monent)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Characterized by the long vowel -ē- in the present stem.
+- The 1st person singular ending is -eō (retains the stem vowel).
+- Examples: monēre (to warn), vidēre (to see), habēre (to have).
