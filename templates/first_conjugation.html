@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Latin Conjugation</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #162447;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #0f3460;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            text-align: left;
+            color: #e94560;
+            max-width: 600px;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+        }
+        .tables {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        table {
+            color: #ffffff;
+            margin: 0 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 15px;
+            border: 1px solid #4a4e69;
+            text-align: center;
+        }
+        th {
+            color: #00ffcc;
+            background-color: #162447;
+        }
+        .rules {
+            color: #a0a0a0;
+            margin-top: 20px;
+            background-color: #162447;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .rules ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>First Latin Conjugation (-āre)</h1>
+        <p style="text-align: center; color: #fff;">Present Active Indicative</p>
+        <div class="tables">
+            <table>
+                <tr><th colspan="3">Singular</th></tr>
+                <tr><th>Person</th><th>Ending</th><th>Example (am-āre)</th></tr>
+                <tr><td>1st</td><td>-ō</td><td>amō</td></tr>
+                <tr><td>2nd</td><td>-ās</td><td>amās</td></tr>
+                <tr><td>3rd</td><td>-at</td><td>amat</td></tr>
+            </table>
+            <table>
+                <tr><th colspan="3">Plural</th></tr>
+                <tr><th>Person</th><th>Ending</th><th>Example (am-āre)</th></tr>
+                <tr><td>1st</td><td>-āmus</td><td>amāmus</td></tr>
+                <tr><td>2nd</td><td>-ātis</td><td>amātis</td></tr>
+                <tr><td>3rd</td><td>-ant</td><td>amant</td></tr>
+            </table>
+        </div>
+        <div class="rules">
+            <strong><span style="color: #00ffcc;">Rules:</span></strong>
+            <ul>
+                <li>Characterized by the vowel <strong>-ā-</strong> in the present stem.</li>
+                <li>The 1st person singular ending <em>-ō</em> absorbs the stem vowel (<em>amā-ō</em> becomes <em>amō</em>).</li>
+                <li>Examples: <em>amāre</em> (to love), <em>laudāre</em> (to praise), <em>parāre</em> (to prepare).</li>
+            </ul>
+        </div>
+        <p style="color: #fff; margin-top: 30px; text-align: center;">(Try curling this page from your terminal! <br><code>curl http://localhost:{{port}}/first-conjugation</code>)</p>
+    </div>
+</body>
+</html>

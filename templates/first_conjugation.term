@@ -1,0 +1,17 @@
+{Colors.OKCYAN}{Colors.BOLD}First Latin Conjugation (-āre){Colors.ENDC}
+{Colors.OKCYAN}Present Active Indicative{Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  1st: -ō      (amō)
+  2nd: -ās     (amās)
+  3rd: -at     (amat)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  1st: -āmus   (amāmus)
+  2nd: -ātis   (amātis)
+  3rd: -ant    (amant)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Characterized by the vowel -ā- in the present stem.
+- The 1st person singular ending -ō absorbs the stem vowel (amā-ō -> amō).
+- Examples: amāre (to love), laudāre (to praise), parāre (to prepare).
