@@ -1,0 +1,17 @@
+{Colors.OKCYAN}{Colors.BOLD}Fourth Latin Conjugation (-īre){Colors.ENDC}
+{Colors.OKCYAN}Present Active Indicative{Colors.ENDC}
+
+{Colors.OKGREEN}Singular:{Colors.ENDC}
+  1st: -iō     (audiō)
+  2nd: -īs     (audīs)
+  3rd: -it     (audit)
+
+{Colors.OKGREEN}Plural:{Colors.ENDC}
+  1st: -īmus   (audīmus)
+  2nd: -ītis   (audītis)
+  3rd: -iunt   (audiunt)
+
+{Colors.BOLD}Rules:{Colors.ENDC}
+- Characterized by the long vowel -ī- in the present stem.
+- Inherits the -i- in the 1st person singular (-iō) and 3rd person plural (-iunt).
+- Examples: audīre (to hear), venīre (to come), scīre (to know).
