@@ -23,6 +23,11 @@ STATIC_ROUTES = {
     '/third-declension': 'third_declension',
     '/fourth-declension': 'fourth_declension',
     '/fifth-declension': 'fifth_declension',
+    '/first-conjugation': 'first_conjugation',
+    '/second-conjugation': 'second_conjugation',
+    '/third-conjugation': 'third_conjugation',
+    '/third-io-conjugation': 'third_io_conjugation',
+    '/fourth-conjugation': 'fourth_conjugation',
 }
 
 def serve_template(handler, template_basename, context=None):
