@@ -5,12 +5,16 @@ import socketserver
 from datetime import datetime
 import json
 
-PORT = 8000
+import os
+PORT = int(os.environ.get("PORT", 8000))
 
 from utils.renderers import terminal_renderer, html_renderer
 
 with open("latin_proverbs.json", "r", encoding="utf-8") as f:
     PROVERBS = json.load(f)
+
+with open("assets/404.txt", "r", encoding="utf-8") as f:
+    ART_404 = f.read()
 
 def get_proverb_of_the_day():
     day_of_year = datetime.now().timetuple().tm_yday
@@ -31,7 +35,7 @@ STATIC_ROUTES = {
     '/first-declension-ex': 'first_declension_ex',
 }
 
-def serve_template(handler, template_basename, context=None):
+def serve_template(handler, template_basename, context=None, status_code=200):
     """Universally handles HTTP response formatting for both terminal and web clients."""
     if context is None:
         context = {}
@@ -40,13 +44,13 @@ def serve_template(handler, template_basename, context=None):
     is_terminal = any(agent in user_agent for agent in ['curl', 'wget', 'httpie'])
     
     if is_terminal:
-        handler.send_response(200)
+        handler.send_response(status_code)
         handler.send_header("Content-type", "text/plain; charset=utf-8")
         handler.end_headers()
         content = terminal_renderer(f"{template_basename}.term", **context)
         handler.wfile.write(content.encode('utf-8'))
     else:
-        handler.send_response(200)
+        handler.send_response(status_code)
         handler.send_header("Content-type", "text/html; charset=utf-8")
         handler.end_headers()
         content = html_renderer(f"{template_basename}.html", **context)
@@ -58,9 +62,29 @@ class SinglePageHandler(http.server.BaseHTTPRequestHandler):
             serve_template(self, STATIC_ROUTES[self.path], {"port": PORT})
             return
 
-        # Default to Proverb of the Day
-        latin, english = get_proverb_of_the_day()
-        serve_template(self, "base", {"latin": latin, "english": english, "port": PORT})
+        if self.path.startswith('/assets/'):
+            try:
+                file_path = self.path.lstrip('/')
+                with open(file_path, "rb") as f:
+                    self.send_response(200)
+                    if file_path.endswith(".png"):
+                        self.send_header("Content-type", "image/png")
+                    elif file_path.endswith(".txt"):
+                        self.send_header("Content-type", "text/plain")
+                    self.end_headers()
+                    self.wfile.write(f.read())
+                return
+            except FileNotFoundError:
+                pass
+
+        if self.path == '/':
+            # Default to Proverb of the Day for Home
+            latin, english = get_proverb_of_the_day()
+            serve_template(self, "base", {"latin": latin, "english": english, "port": PORT})
+            return
+
+        # 404 for everything else
+        serve_template(self, "404", {"port": PORT, "path": self.path, "art": ART_404}, status_code=404)
 
 if __name__ == "__main__":
     socketserver.TCPServer.allow_reuse_address = True
