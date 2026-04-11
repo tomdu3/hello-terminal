@@ -1,0 +1,23 @@
+{Colors.OKCYAN}{Colors.BOLD}First Latin Declension - Exceptions{Colors.ENDC}
+
+{Colors.OKGREEN}1. Masculine Nouns (Occupations):{Colors.ENDC}
+Words that denote typically masculine roles are masculine despite being in the 1st declension.
+- {Colors.BOLD}agricola{Colors.ENDC}, -ae (m.): farmer
+- {Colors.BOLD}nauta{Colors.ENDC}, -ae (m.): sailor
+- {Colors.BOLD}poēta{Colors.ENDC}, -ae (m.): poet
+- {Colors.BOLD}pīrāta{Colors.ENDC}, -ae (m.): pirate
+
+{Colors.OKGREEN}2. Dative/Ablative Plural (-ābus):{Colors.ENDC}
+Some nouns use {Colors.BOLD}-ābus{Colors.ENDC} instead of {Colors.BOLD}-īs{Colors.ENDC} to distinguish from masculine forms:
+- {Colors.BOLD}dea{Colors.ENDC} (goddess) -> {Colors.BOLD}deābus{Colors.ENDC} (to avoid confusion with {Colors.BOLD}deīs{Colors.ENDC})
+- {Colors.BOLD}fīlia{Colors.ENDC} (daughter) -> {Colors.BOLD}fīliābus{Colors.ENDC} (to avoid confusion with {Colors.BOLD}fīliīs{Colors.ENDC})
+
+{Colors.OKGREEN}3. Genitive Singular (-ās):{Colors.ENDC}
+An archaic form preserved in a few expressions:
+- {Colors.BOLD}pater familiās{Colors.ENDC}: head of the household
+- {Colors.BOLD}māter familiās{Colors.ENDC}: mother of the family
+
+{Colors.OKGREEN}4. Genitive Plural (-um):{Colors.ENDC}
+Found in poetry or specific Greek loanwords/measures:
+- {Colors.BOLD}amphora{Colors.ENDC} -> {Colors.BOLD}amphorum{Colors.ENDC} (rarely)
+- {Colors.BOLD}drachma{Colors.ENDC} -> {Colors.BOLD}drachmum{Colors.ENDC}
