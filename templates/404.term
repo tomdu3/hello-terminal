@@ -1,0 +1,11 @@
+{Colors.BOLD}{Colors.OKCYAN}404 - Error{Colors.ENDC}
+
+{art}
+
+{Colors.BOLD}Vagus perditus?{Colors.ENDC}
+(A lost wanderer?)
+
+The path {Colors.OKCYAN}{path}{Colors.ENDC} leads to nowhere.
+
+{Colors.OKGREEN}Return home:{Colors.ENDC}
+curl http://localhost:{port}/
