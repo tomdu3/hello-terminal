@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Latin Declension Exceptions</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #162447;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #0f3460;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            text-align: left;
+            color: #ffffff;
+            max-width: 850px;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+        }
+        h2 {
+            color: #e94560;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .exception-section {
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #162447;
+            padding: 15px;
+            border-radius: 5px;
+            color: #00ffcc;
+            font-weight: bold;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        em {
+            color: #e94560;
+            font-style: italic;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Second Latin Declension Exceptions</h1>
+        
+        <div class="exception-section">
+            <h2>1. Feminine Nouns in -us</h2>
+            <p>While most nouns in <em>-us</em> are masculine, many names of trees, towns, and countries are feminine:</p>
+            <ul>
+                <li><strong>Names of Trees</strong>: <em>quercus</em> (oak), <em>pīnus</em> (pine), <em>fāgus</em> (beech).</li>
+                <li><strong>Names of Regions/Cities</strong>: <em>Aegyptus</em> (Egypt), <em>Rhodos</em> (Rhodes), <em>Corinthus</em> (Corinth).</li>
+                <li><strong>Others</strong>: <em>alvus</em> (belly), <em>colus</em> (distaff), <em>humus</em> (ground).</li>
+            </ul>
+        </div>
+
+        <div class="exception-section">
+            <h2>2. Neuter Nouns in -us</h2>
+            <p>A few nouns ending in <em>-us</em> are actually neuter (mostly found in the singular):</p>
+            <div class="code-block">
+                vulgus (the common people)<br>
+                vīrus (poison / slime)<br>
+                pelagus (the open sea)
+            </div>
+            <p class="note">These usually follow the neuter rule (Nom = Acc) but lack plural forms.</p>
+        </div>
+
+        <div class="exception-section">
+            <h2>3. Vocative of Nouns in -ius</h2>
+            <p>Proper names and nouns in <em>-ius</em> form the vocative by dropping the <em>-us</em> (ending in <em>-ī</em>):</p>
+            <div class="code-block">
+                fīlius (son) &rarr; fīlī<br>
+                genius (spirit) &rarr; genī<br>
+                Vergilius &rarr; Vergilī
+            </div>
+            <p class="note">Note: <em>meus</em> has the vocative <em>mī</em>.</p>
+        </div>
+
+        <div class="exception-section">
+            <h2>4. The Irregular Noun: Deus (God)</h2>
+            <p>The noun <em>deus</em> often has contracted forms in the plural:</p>
+            <div class="code-block">
+                Plural Nom: dī (rarely deī or diī)<br>
+                Plural Gen: deōrum (or deum)<br>
+                Plural Dat/Abl: dīs (rarely deīs or diīs)
+            </div>
+        </div>
+
+        <div class="exception-section">
+            <h2>5. Genitive Plural (-um)</h2>
+            <p>Found primarily in poetry, or with words of weight, measure, and money:</p>
+            <ul>
+                <li><strong>deum</strong> (instead of deōrum)</li>
+                <li><strong>nummum</strong> (instead of nummōrum)</li>
+                <li><strong>talentum</strong> (instead of talentōrum)</li>
+            </ul>
+        </div>
+
+        <p style="color: #a0a0a0; margin-top: 30px; text-align: center;">(View this in your terminal: <code>curl http://localhost:{{port}}/second-declension-ex</code>)</p>
+    </div>
+</body>
+</html>

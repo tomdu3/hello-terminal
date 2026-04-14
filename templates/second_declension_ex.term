@@ -1,0 +1,32 @@
+{Colors.OKCYAN}{Colors.BOLD}Second Latin Declension - Exceptions{Colors.ENDC}
+
+{Colors.OKGREEN}1. Feminine Nouns in -us:{Colors.ENDC}
+While most are masculine, these are feminine:
+- {Colors.BOLD}Trees:{Colors.ENDC} quercus (oak), pīnus (pine), fāgus (beech)
+- {Colors.BOLD}Places:{Colors.ENDC} Aegyptus (Egypt), Corinthus (Corinth)
+- {Colors.BOLD}Others:{Colors.ENDC} humus (ground), alvus (belly)
+
+{Colors.OKGREEN}2. Neuter Nouns in -us:{Colors.ENDC}
+Rare nouns that end in -us but are neuter:
+- {Colors.BOLD}vulgus{Colors.ENDC} (crowd)
+- {Colors.BOLD}vīrus{Colors.ENDC} (poison)
+- {Colors.BOLD}pelagus{Colors.ENDC} (sea)
+
+{Colors.OKGREEN}3. Vocative of Nouns in -ius:{Colors.ENDC}
+Nouns in -ius (and proper names) have vocative in {Colors.BOLD}-ī{Colors.ENDC}:
+- {Colors.BOLD}fīlius{Colors.ENDC} -> fīlī
+- {Colors.BOLD}genius{Colors.ENDC} -> genī
+- {Colors.BOLD}Vergilius{Colors.ENDC} -> Vergilī
+- {Colors.BOLD}meus{Colors.ENDC} -> mī (irregular)
+
+{Colors.OKGREEN}4. The Irregular Noun: Deus (God):{Colors.ENDC}
+Plural often uses contracted forms:
+- {Colors.BOLD}Nom Plural:{Colors.ENDC} dī (rarely deī)
+- {Colors.BOLD}Gen Plural:{Colors.ENDC} deōrum / deum
+- {Colors.BOLD}Dat/Abl Plural:{Colors.ENDC} dīs (rarely deīs)
+
+{Colors.OKGREEN}5. Genitive Plural -um:{Colors.ENDC}
+Used in poetry or with weights/measures:
+- {Colors.BOLD}deum{Colors.ENDC} (of the gods)
+- {Colors.BOLD}nummum{Colors.ENDC} (of coins)
+- {Colors.BOLD}talentum{Colors.ENDC} (of talents)
