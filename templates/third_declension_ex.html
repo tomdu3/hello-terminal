@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Latin Declension Exceptions</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #162447;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #0f3460;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            text-align: left;
+            color: #ffffff;
+            max-width: 850px;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+        }
+        h2 {
+            color: #e94560;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .exception-section {
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #162447;
+            padding: 15px;
+            border-radius: 5px;
+            color: #00ffcc;
+            font-weight: bold;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        em {
+            color: #e94560;
+            font-style: italic;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Third Latin Declension Exceptions</h1>
+        
+        <div class="exception-section">
+            <h2>1. Pure I-Stems</h2>
+            <p>Some nouns always or usually take <em>-im</em> in the Accusative singular and <em>-ī</em> in the Ablative singular:</p>
+            <ul>
+                <li><strong>Always</strong>: <em>vīs</em> (force), <em>sitīs</em> (thirst), <em>tussis</em> (cough), <em>secūris</em> (axe).</li>
+                <li><strong>Usually</strong>: <em>febris</em> (fever), <em>puppis</em> (stern).</li>
+            </ul>
+        </div>
+
+        <div class="exception-section">
+            <h2>2. Irregular Nouns</h2>
+            <p>These nouns have stem changes or irregular endings:</p>
+            <div class="code-block">
+                <strong>vīs</strong> (force): Nom: vīs, Acc: vim, Abl: vī | Pl: vīrēs, vīrium, vīribus...<br>
+                <strong>bōs</strong> (ox/cow): Gen Pl: boum, Dat/Abl Pl: būbus (or bōbus)<br>
+                <strong>Iuppiter</strong> (Jupiter): Gen: Iovis, Dat: Iovī, Acc: Iovem, Abl: Iove<br>
+                <strong>iter</strong> (journey): Gen: itineris (stem: itiner-)<br>
+                <strong>senex</strong> (old man): Gen: senis (stem: sen-)
+            </div>
+        </div>
+
+        <div class="exception-section">
+            <h2>3. Mixed Stems (Plural I-Stems)</h2>
+            <p>Monosyllables in <em>-s</em> or <em>-x</em> following a consonant take <em>-ium</em> in the Genitive plural:</p>
+            <div class="code-block">
+                urbs &rarr; urbium<br>
+                mons &rarr; montium<br>
+                nox &rarr; noctium
+            </div>
+            <p class="note">Nouns in <em>-is</em> and <em>-es</em> that are not increasing (same syllables in Nom and Gen) also take <em>-ium</em> (e.g., <em>hostis</em>, <em>caedēs</em>).</p>
+        </div>
+
+        <div class="exception-section">
+            <h2>4. Gender Exceptions</h2>
+            <p>While rules often apply, watch out for these common exceptions:</p>
+            <ul>
+                <li><strong>Masculine in -is</strong>: <em>collis</em> (hill), <em>mensis</em> (month), <em>piscis</em> (fish), <em>canis</em> (dog).</li>
+                <li><strong>Feminine in -os</strong>: <em>arbōs</em> (tree).</li>
+                <li><strong>Masculine in -l/-n</strong>: <em>sōl</em> (sun), <em>sal</em> (salt), <em>rēn</em> (kidney).</li>
+            </ul>
+        </div>
+
+        <p style="color: #a0a0a0; margin-top: 30px; text-align: center;">(View this in your terminal: <code>curl http://localhost:{{port}}/third-declension-ex</code>)</p>
+    </div>
+</body>
+</html>

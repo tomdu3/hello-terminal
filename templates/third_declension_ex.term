@@ -1,0 +1,25 @@
+{Colors.OKCYAN}{Colors.BOLD}Third Latin Declension - Exceptions{Colors.ENDC}
+
+{Colors.OKGREEN}1. Pure I-Stems:{Colors.ENDC}
+Nouns that take {Colors.BOLD}-im{Colors.ENDC} (Acc) and {Colors.BOLD}-ī{Colors.ENDC} (Abl):
+- {Colors.BOLD}Always:{Colors.ENDC} vīs (force), sitīs (thirst), tussis (cough)
+- {Colors.BOLD}Usually:{Colors.ENDC} febris (fever), puppis (stern)
+
+{Colors.OKGREEN}2. Irregular Nouns:{Colors.ENDC}
+Stem changes and unusual endings:
+- {Colors.BOLD}vīs:{Colors.ENDC} Nom: vīs, Acc: vim, Abl: vī | Pl: vīrēs, vīrium...
+- {Colors.BOLD}bōs (ox):{Colors.ENDC} Gen Pl: boum, Dat/Abl Pl: būbus
+- {Colors.BOLD}Iuppiter:{Colors.ENDC} Gen: Iovis, Dat: Iovī, Acc: Iovem
+- {Colors.BOLD}iter (journey):{Colors.ENDC} Gen: itineris (stem: itiner-)
+- {Colors.BOLD}senex (old man):{Colors.ENDC} Gen: senis (stem: sen-)
+
+{Colors.OKGREEN}3. Mixed Stems (Gen Pl -ium):{Colors.ENDC}
+- {Colors.BOLD}Monosyllables:{Colors.ENDC} urbs -> urbium, mons -> montium
+- {Colors.BOLD}Non-increasing -is/-es:{Colors.ENDC} hostis -> hostium, caedēs -> caedium
+
+{Colors.OKGREEN}4. Gender Exceptions:{Colors.ENDC}
+- {Colors.BOLD}Masculine in -is:{Colors.ENDC} collis (hill), mensis (month), piscis (fish)
+- {Colors.BOLD}Feminine in -os:{Colors.ENDC} arbōs (tree)
+- {Colors.BOLD}Masculine in -l/-n:{Colors.ENDC} sōl (sun), sal (salt)
+
+{Colors.WARNING}Note:{Colors.ENDC} vīs is extremely irregular and essential for reading.
