@@ -1,46 +1,92 @@
-# Hello Terminal
+# 🏛️ Hello Terminal: The Latin Reference
 
-A terminal based "Hello World" web site.
+A terminal-first, dual-client Latin grammar reference and proverb tool. Built for the modern classicist who lives in the CLI but appreciates a beautiful web interface.
 
-## Latin Proverbs
+## 🚀 Overview
 
-The proverbs are taken from the website https://www.pinteric.com/proloc.html.
+**Hello Terminal** is a lightweight web server that serves different content based on how you access it.
+- **Terminal Users (`curl`, `wget`)**: Get high-contrast, ANSI-colored text with ASCII art.
+- **Web Browsers**: Get a responsive HTML experience that mirrors the terminal aesthetic.
 
-The script `download_proverbs.py` downloads the proverbs from the website and saves them to a JSON file. Execute it using:
+The project has evolved from a simple "Hello World" into a comprehensive reference for Latin declensions, conjugations, and grammatical exceptions.
 
+---
+
+## ✨ Features
+
+- **Terminal-First Experience**: Optimized for `curl`. Use it without leaving your development environment.
+- **Dual Rendering Engine**: A custom backend detects your `User-Agent` to serve either `.term` (ANSI/Plaintext) or `.html` templates.
+- **Comprehensive Latin Reference**:
+  - **Declensions**: Full tables for 1st through 5th declensions.
+  - **Conjugations**: Active indicative tables for 1st, 2nd, 3rd, 3rd-io, and 4th conjugations.
+  - **Grammatical Exceptions**: Specialized pages for tricky declension exceptions.
+- **Proverb of the Day**: Every visit to the home page serves a new wisdom from a curated dataset of Latin proverbs.
+- **Ultra-Lightweight**: Built using Python's native `http.server`. Zero heavy frameworks, maximum speed.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend**: Python 3.14 (utilizing `http.server` & `socketserver`)
+- **Environment**: Managed by [uv](https://github.com/astral-sh/uv)
+- **Data**: JSON-backed proverb storage (`latin_proverbs.json`)
+- **Templating**: Custom `renderers.py` supporting `.term` (str.format) and `.html` rendering.
+
+---
+
+## 📖 Available Routes
+
+You can access any of these routes via your browser or terminal:
+
+### Grammar Reference
+| Category | Routes |
+| :--- | :--- |
+| **Declensions** | `/first-declension`, `/second-declension`, `/third-declension`, `/fourth-declension`, `/fifth-declension` |
+| **Conjugations** | `/first-conjugation`, `/second-conjugation`, `/third-conjugation`, `/third-io-conjugation`, `/fourth-conjugation` |
+| **Exceptions** | `/first-declension-ex`, `/second-declension-ex`, `/third-declension-ex` |
+
+### General
+- `/`: Home page with the **Proverb of the Day**.
+- `/assets/`: Direct access to ASCII art and images.
+
+---
+
+## 🏗️ Setup & Running
+
+This project uses `uv` for environment management.
+
+1. **Install dependencies**:
+   ```bash
+   uv sync
+   ```
+
+2. **Run the server**:
+   ```bash
+   uv run server.py
+   ```
+   The server will start at `http://localhost:8000`.
+
+---
+
+## 🖱️ Usage Examples
+
+### From the Terminal (Recommended)
 ```bash
-uv run download_proverbs.py
-```
-
-## Stack Description
-
-- **Backend:** Python 3 (built-in `http.server` & `socketserver`)
-- **Data Storage:** JSON file (`latin_proverbs.json`)
-- **Frontend (Web):** Vanilla HTML/CSS
-- **Frontend (Terminal):** Plain text with ANSI color codes
-
-## Setup and Installation
-
-This project uses [uv](https://github.com/astral-sh/uv) to manage the Python environment. To create the environment and install dependencies, run:
-
-```bash
-uv sync
-```
-
-## Running the Server
-
-Start the application by executing the server script within the `uv` environment:
-
-```bash
-uv run server.py
-```
-
-The server will start listening on port `8000` by default.
-
-## Testing the Terminal Interface
-
-To view the terminal version, open your terminal and run `curl`:
-
-```bash
+# Get the proverb of the day
 curl http://localhost:8000
+
+# Look up the 3rd declension
+curl http://localhost:8000/third-declension
+
+# Check exceptions for the 2nd declension
+curl http://localhost:8000/second-declension-ex
 ```
+
+### From the Browser
+Simply navigate to `http://localhost:8000` in your favorite browser to see the HTML version of the terminal interface.
+
+---
+
+## ⚙️ How it Works
+
+The server uses a custom `serve_template` function in `server.py` that checks the `User-Agent` header. If it finds keywords like `curl`, `wget`, or `httpie`, it triggers the `terminal_renderer` which injects ANSI color codes defined in `utils/renderers.py` into a `.term` template. Otherwise, it uses the `html_renderer` for a standard web response.
